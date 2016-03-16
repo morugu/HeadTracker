@@ -7,17 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4D798F1DD3D1D6F182DC9C18 /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9603F81DA7B26C0FAB9D6DF /* Pods.framework */; };
+		4D8883A31C98F58800B02209 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8883A21C98F58800B02209 /* AVFoundation.framework */; };
+		4D8883A51C98F59200B02209 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8883A41C98F59200B02209 /* CoreFoundation.framework */; };
+		4D8883A91C98F5B800B02209 /* libopencv_core.2.4.12.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8883A61C98F5B800B02209 /* libopencv_core.2.4.12.dylib */; };
+		4D8883AA1C98F5B800B02209 /* libopencv_highgui.2.4.12.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8883A71C98F5B800B02209 /* libopencv_highgui.2.4.12.dylib */; };
+		4D8883AB1C98F5B800B02209 /* libopencv_objdetect.2.4.12.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D8883A81C98F5B800B02209 /* libopencv_objdetect.2.4.12.dylib */; };
+		4D8883B01C98F5EA00B02209 /* haarcascade_frontalface_alt.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4D8883AC1C98F5EA00B02209 /* haarcascade_frontalface_alt.xml */; };
+		4D8883B11C98F5EA00B02209 /* haarcascade_frontalface_alt2.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4D8883AD1C98F5EA00B02209 /* haarcascade_frontalface_alt2.xml */; };
+		4D8883B21C98F5EA00B02209 /* haarcascade_frontalface_default.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4D8883AE1C98F5EA00B02209 /* haarcascade_frontalface_default.xml */; };
+		4D8883B31C98F5EA00B02209 /* haarcascade_profileface.xml in Resources */ = {isa = PBXBuildFile; fileRef = 4D8883AF1C98F5EA00B02209 /* haarcascade_profileface.xml */; };
+		4D8883B61C98F61F00B02209 /* Recognizer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D8883B51C98F61F00B02209 /* Recognizer.mm */; };
+		4D8883B91C98F69700B02209 /* NSImage_OpenCV.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D8883B81C98F69700B02209 /* NSImage_OpenCV.mm */; };
+		4D8883BB1C98F94B00B02209 /* Application.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D8883BA1C98F94B00B02209 /* Application.swift */; };
 		4DEA6AE71C98F4A2004AEF83 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DEA6AE61C98F4A2004AEF83 /* AppDelegate.swift */; };
 		4DEA6AE91C98F4A2004AEF83 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DEA6AE81C98F4A2004AEF83 /* Assets.xcassets */; };
 		4DEA6AEC1C98F4A2004AEF83 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DEA6AEA1C98F4A2004AEF83 /* MainMenu.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35FCF2FC0B9A77E4399CB848 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		4D698EF8104762E7E83166B0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4D8883A21C98F58800B02209 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4D8883A41C98F59200B02209 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		4D8883A61C98F5B800B02209 /* libopencv_core.2.4.12.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_core.2.4.12.dylib; path = ../../../../usr/local/Cellar/opencv/2.4.12_2/lib/libopencv_core.2.4.12.dylib; sourceTree = "<group>"; };
+		4D8883A71C98F5B800B02209 /* libopencv_highgui.2.4.12.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_highgui.2.4.12.dylib; path = ../../../../usr/local/Cellar/opencv/2.4.12_2/lib/libopencv_highgui.2.4.12.dylib; sourceTree = "<group>"; };
+		4D8883A81C98F5B800B02209 /* libopencv_objdetect.2.4.12.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_objdetect.2.4.12.dylib; path = ../../../../usr/local/Cellar/opencv/2.4.12_2/lib/libopencv_objdetect.2.4.12.dylib; sourceTree = "<group>"; };
+		4D8883AC1C98F5EA00B02209 /* haarcascade_frontalface_alt.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt.xml; path = /usr/local/Cellar/opencv/2.4.12_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt.xml; sourceTree = "<absolute>"; };
+		4D8883AD1C98F5EA00B02209 /* haarcascade_frontalface_alt2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_alt2.xml; path = /usr/local/Cellar/opencv/2.4.12_2/share/OpenCV/haarcascades/haarcascade_frontalface_alt2.xml; sourceTree = "<absolute>"; };
+		4D8883AE1C98F5EA00B02209 /* haarcascade_frontalface_default.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_frontalface_default.xml; path = /usr/local/Cellar/opencv/2.4.12_2/share/OpenCV/haarcascades/haarcascade_frontalface_default.xml; sourceTree = "<absolute>"; };
+		4D8883AF1C98F5EA00B02209 /* haarcascade_profileface.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = haarcascade_profileface.xml; path = /usr/local/Cellar/opencv/2.4.12_2/share/OpenCV/haarcascades/haarcascade_profileface.xml; sourceTree = "<absolute>"; };
+		4D8883B41C98F61E00B02209 /* HeadTracker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HeadTracker-Bridging-Header.h"; sourceTree = "<group>"; };
+		4D8883B51C98F61F00B02209 /* Recognizer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Recognizer.mm; sourceTree = "<group>"; };
+		4D8883B71C98F69700B02209 /* NSImage_OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSImage_OpenCV.h; sourceTree = "<group>"; };
+		4D8883B81C98F69700B02209 /* NSImage_OpenCV.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = NSImage_OpenCV.mm; sourceTree = "<group>"; };
+		4D8883BA1C98F94B00B02209 /* Application.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Application.swift; sourceTree = "<group>"; };
 		4DEA6AE31C98F4A2004AEF83 /* HeadTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEA6AE61C98F4A2004AEF83 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4DEA6AE81C98F4A2004AEF83 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DEA6AEB1C98F4A2004AEF83 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		4DEA6AED1C98F4A2004AEF83 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9603F81DA7B26C0FAB9D6DF /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,17 +55,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8883A91C98F5B800B02209 /* libopencv_core.2.4.12.dylib in Frameworks */,
+				4D8883AA1C98F5B800B02209 /* libopencv_highgui.2.4.12.dylib in Frameworks */,
+				4D8883AB1C98F5B800B02209 /* libopencv_objdetect.2.4.12.dylib in Frameworks */,
+				4D8883A31C98F58800B02209 /* AVFoundation.framework in Frameworks */,
+				4D8883A51C98F59200B02209 /* CoreFoundation.framework in Frameworks */,
+				4D798F1DD3D1D6F182DC9C18 /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4D8883BC1C98FAE900B02209 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				4D8883AD1C98F5EA00B02209 /* haarcascade_frontalface_alt2.xml */,
+				4D8883AE1C98F5EA00B02209 /* haarcascade_frontalface_default.xml */,
+				4D8883AF1C98F5EA00B02209 /* haarcascade_profileface.xml */,
+				4D8883AC1C98F5EA00B02209 /* haarcascade_frontalface_alt.xml */,
+			);
+			name = Resouces;
+			sourceTree = "<group>";
+		};
 		4DEA6ADA1C98F4A2004AEF83 = {
 			isa = PBXGroup;
 			children = (
 				4DEA6AE51C98F4A2004AEF83 /* HeadTracker */,
 				4DEA6AE41C98F4A2004AEF83 /* Products */,
+				906DA1D2DE21A63584F44D6C /* Pods */,
+				8C403AFB9C8A6796057C97A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,11 +100,39 @@
 			isa = PBXGroup;
 			children = (
 				4DEA6AE61C98F4A2004AEF83 /* AppDelegate.swift */,
+				4D8883BA1C98F94B00B02209 /* Application.swift */,
 				4DEA6AE81C98F4A2004AEF83 /* Assets.xcassets */,
-				4DEA6AEA1C98F4A2004AEF83 /* MainMenu.xib */,
+				4D8883B41C98F61E00B02209 /* HeadTracker-Bridging-Header.h */,
 				4DEA6AED1C98F4A2004AEF83 /* Info.plist */,
+				4DEA6AEA1C98F4A2004AEF83 /* MainMenu.xib */,
+				4D8883B71C98F69700B02209 /* NSImage_OpenCV.h */,
+				4D8883B81C98F69700B02209 /* NSImage_OpenCV.mm */,
+				4D8883B51C98F61F00B02209 /* Recognizer.mm */,
+				4D8883BC1C98FAE900B02209 /* Resouces */,
 			);
 			path = HeadTracker;
+			sourceTree = "<group>";
+		};
+		8C403AFB9C8A6796057C97A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D8883A61C98F5B800B02209 /* libopencv_core.2.4.12.dylib */,
+				4D8883A71C98F5B800B02209 /* libopencv_highgui.2.4.12.dylib */,
+				4D8883A81C98F5B800B02209 /* libopencv_objdetect.2.4.12.dylib */,
+				4D8883A41C98F59200B02209 /* CoreFoundation.framework */,
+				4D8883A21C98F58800B02209 /* AVFoundation.framework */,
+				B9603F81DA7B26C0FAB9D6DF /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		906DA1D2DE21A63584F44D6C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				35FCF2FC0B9A77E4399CB848 /* Pods.debug.xcconfig */,
+				4D698EF8104762E7E83166B0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -65,9 +142,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4DEA6AF01C98F4A2004AEF83 /* Build configuration list for PBXNativeTarget "HeadTracker" */;
 			buildPhases = (
+				9BB1ABE438B94EB78479F849 /* Check Pods Manifest.lock */,
 				4DEA6ADF1C98F4A2004AEF83 /* Sources */,
 				4DEA6AE01C98F4A2004AEF83 /* Frameworks */,
 				4DEA6AE11C98F4A2004AEF83 /* Resources */,
+				1DCDD7AB19D9D08ACCFE51CF /* Embed Pods Frameworks */,
+				AFE27F17701216086D8E892D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -117,18 +197,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DEA6AE91C98F4A2004AEF83 /* Assets.xcassets in Resources */,
+				4D8883B31C98F5EA00B02209 /* haarcascade_profileface.xml in Resources */,
+				4D8883B01C98F5EA00B02209 /* haarcascade_frontalface_alt.xml in Resources */,
+				4D8883B11C98F5EA00B02209 /* haarcascade_frontalface_alt2.xml in Resources */,
+				4D8883B21C98F5EA00B02209 /* haarcascade_frontalface_default.xml in Resources */,
 				4DEA6AEC1C98F4A2004AEF83 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1DCDD7AB19D9D08ACCFE51CF /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9BB1ABE438B94EB78479F849 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AFE27F17701216086D8E892D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4DEA6ADF1C98F4A2004AEF83 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D8883BB1C98F94B00B02209 /* Application.swift in Sources */,
 				4DEA6AE71C98F4A2004AEF83 /* AppDelegate.swift in Sources */,
+				4D8883B91C98F69700B02209 /* NSImage_OpenCV.mm in Sources */,
+				4D8883B61C98F61F00B02209 /* Recognizer.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,25 +363,42 @@
 		};
 		4DEA6AF11C98F4A2004AEF83 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35FCF2FC0B9A77E4399CB848 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/opencv/2.4.12_2/include;
 				INFOPLIST_FILE = HeadTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/opencv/2.4.12_2/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = fund.code.HeadTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HeadTracker/HeadTracker-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		4DEA6AF21C98F4A2004AEF83 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D698EF8104762E7E83166B0 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/local/Cellar/opencv/2.4.12_2/include;
 				INFOPLIST_FILE = HeadTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					/usr/local/Cellar/opencv/2.4.12_2/lib,
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = fund.code.HeadTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HeadTracker/HeadTracker-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -269,6 +421,7 @@
 				4DEA6AF21C98F4A2004AEF83 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

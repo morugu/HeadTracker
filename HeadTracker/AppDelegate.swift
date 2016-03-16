@@ -1,27 +1,21 @@
-//
-//  AppDelegate.swift
-//  HeadTracker
-//
-//  Created by Masaki Fujimoto on 2016/03/16.
-//  Copyright © 2016年 Masaki Fujimoto. All rights reserved.
-//
-
 import Cocoa
+import XCGLogger
+
+let log = XCGLogger.defaultInstance()
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
-
     @IBOutlet weak var window: NSWindow!
-
+    
+    var app:Application!
 
     func applicationDidFinishLaunching(aNotification: NSNotification) {
-        // Insert code here to initialize your application
+        log.setup(XCGLogger.LogLevel.Debug, showThreadName: true, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil, fileLogLevel: XCGLogger.LogLevel.Debug)
+        
+        app = Application()
+        app.run()
     }
 
     func applicationWillTerminate(aNotification: NSNotification) {
-        // Insert code here to tear down your application
     }
-
-
 }
-
