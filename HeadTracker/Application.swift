@@ -201,6 +201,10 @@ class Application : NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
             self.stateFrontalConfirmation = 0
             self.stateProfileConfirmation = 0
             return Events.None
+        } else if (found & Application.STATE_FRONTAL > 0) && (found & Application.STATE_PROFILE > 0) {
+            self.stateFrontalConfirmation = 0
+            self.stateProfileConfirmation = 0
+            return Events.None
         }
         
         let current = self.state
@@ -208,7 +212,7 @@ class Application : NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
             self.stateFrontalConfirmation++
             self.stateProfileConfirmation = 0
             
-            if self.stateFrontalConfirmation > 2 {
+            if self.stateFrontalConfirmation > 1 {
                 self.state = Application.STATE_FRONTAL
                 if current != Application.STATE_FRONTAL {
                     return Events.Front
@@ -218,7 +222,7 @@ class Application : NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
             self.stateFrontalConfirmation = 0
             self.stateProfileConfirmation++
             
-            if self.stateProfileConfirmation > 2 {
+            if self.stateProfileConfirmation > 1 {
                 self.state = Application.STATE_PROFILE
                 if current != Application.STATE_PROFILE {
                     return Events.Profile
