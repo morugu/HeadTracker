@@ -40,13 +40,13 @@
     int found = 0;
     
     // frontal
-    cascadeFrontal.detectMultiScale(cvImage, faces, 1.1, 3, CV_HAAR_DO_ROUGH_SEARCH | CV_HAAR_FIND_BIGGEST_OBJECT, cv::Size(28, 28));
+    cascadeFrontal.detectMultiScale(cvImage, faces, 1.1, 3, CV_HAAR_SCALE_IMAGE | CV_HAAR_DO_ROUGH_SEARCH | CV_HAAR_FIND_BIGGEST_OBJECT, cv::Size(28, 28));
     if (faces.size() > 0) {
         found |= 0x01 << 0;
     }
     
     // profile
-    cascadeProfile.detectMultiScale(cvImage, faces, 1.1, 3, CV_HAAR_DO_ROUGH_SEARCH | CV_HAAR_FIND_BIGGEST_OBJECT, cv::Size(33, 33));
+    cascadeProfile.detectMultiScale(cvImage, faces, 1.1, 3, CV_HAAR_SCALE_IMAGE | CV_HAAR_DO_ROUGH_SEARCH | CV_HAAR_FIND_BIGGEST_OBJECT, cv::Size(33, 33));
     if (faces.size() > 0) {
         found |= 0x01 << 1;
     }
