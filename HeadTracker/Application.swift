@@ -1,4 +1,5 @@
 import Cocoa
+import CoreFoundation
 import AVFoundation
 
 class Application : NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
@@ -19,7 +20,9 @@ class Application : NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     var recognizer:Recognizer!
     
     var captureCounter:UInt64 = 0
-    var stateProfileConfirmation = 0
+    var stateFrontalConfirmation:Int = 0
+    var stateProfileConfirmation:Int = 0
+    
     var state:UInt32 = 0
     
     func run() {
@@ -191,21 +194,28 @@ class Application : NSObject, AVCaptureVideoDataOutputSampleBufferDelegate {
     
     func updateState(found:UInt32) -> Events {
         if self.state == found {
+            self.stateFrontalConfirmation = 0
             self.stateProfileConfirmation = 0
             return Events.None
         } else if found == 0 {
+            self.stateFrontalConfirmation = 0
             self.stateProfileConfirmation = 0
             return Events.None
         }
         
         let current = self.state
         if (found & Application.STATE_FRONTAL) > 0 {
+            self.stateFrontalConfirmation++
             self.stateProfileConfirmation = 0
-            self.state = Application.STATE_FRONTAL
-            if current != Application.STATE_FRONTAL {
-                return Events.Front
+            
+            if self.stateFrontalConfirmation > 2 {
+                self.state = Application.STATE_FRONTAL
+                if current != Application.STATE_FRONTAL {
+                    return Events.Front
+                }
             }
         } else if (found & Application.STATE_PROFILE) > 0 {
+            self.stateFrontalConfirmation = 0
             self.stateProfileConfirmation++
             
             if self.stateProfileConfirmation > 2 {
