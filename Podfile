@@ -1,4 +1,6 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-pod 'XCGLogger', '~> 3.2'
+target 'HeadTracker' do
+  pod 'XCGLogger', '~> 3.2'
+end
